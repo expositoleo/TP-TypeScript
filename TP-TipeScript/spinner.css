@@ -1,0 +1,39 @@
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ff3d00;
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#spinnerContainer {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0);
+}
+
+#tableContainer {
+  padding: 20px;
+}
